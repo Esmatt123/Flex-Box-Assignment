@@ -24,20 +24,20 @@ main {
     flex-wrap: wrap;
 }
 
-.box{
+.box {
     width: 33.33%;
     height: 50%;
 }
 
-.red{
+.red {
     background-color: #6A040F;
 }
 
-.black{
+.black {
     background-color: #03071E;
 }
 
-.circle{
+.circle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -45,47 +45,42 @@ main {
     margin: 17px;
 }
 
-.box:first-child{
-   display: flex;
-   flex-wrap: wrap;
-   align-content: flex-start;
-}
-.box:nth-child(2){
-   display: flex;
-   flex-wrap: wrap;
-   align-content: space-around;
-   align-items: flex-start;
-}
-.box:nth-child(3){
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
+.box{
+    display: flex;
 }
 
-.box:nth-child(4){
-    display: flex;
+.box:first-child {
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.box:nth-child(2) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-start;
+}
+
+.box:nth-child(3) {
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap-reverse;
+}
+
+.box:nth-child(4) {
     flex-wrap: wrap;
     align-content: center;
     align-items: flex-start;
- }
+}
 
- .box:last-child{
-    display: flex;
+.box:last-child {
     flex-wrap: wrap;
     align-content: space-between;
     align-items: flex-start;
- }
-
-.smaller-box{
-    width: 80%;
-    height: 80%;
-    display: flex;
-   flex-flow: row-reverse wrap-reverse;
-   align-content: flex-start;
-   
 }
 
-#fullpage{
+
+
+#fullpage {
     display: flex;
     text-decoration: none;
     width: 100%;

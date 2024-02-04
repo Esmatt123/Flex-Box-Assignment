@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body, html{
+body,
+html {
     background-color: #370617;
     height: 100%;
     margin: 0;
 }
 
-p{
+p {
     color: #fff;
     font-family: 'Roboto', Arial;
 }
 
-#fullpage{
+#fullpage {
     display: flex;
     text-decoration: none;
     width: 100%;
@@ -40,77 +41,78 @@ main {
     height: calc(33% - 10px);
     background-color: #F48C06;
     border-radius: 5px;
+    display: flex;
 }
 
-.yellow-box:first-child{
-    display: flex;
+.yellow-box:first-child {
+   
     flex-direction: row;
     align-items: flex-end;
 }
 
-.yellow-box:nth-child(2){
-    display: flex;
+.yellow-box:nth-child(2) {
+    
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
 
-.yellow-box:nth-child(3){
-    display: flex;
+.yellow-box:nth-child(3) {
+    
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
-    align-content: stretch;
+    align-content: baseline;
     text-align: center;
-    
+
 }
-.yellow-box:nth-child(4){
-    display: flex;
+
+.yellow-box:nth-child(4) {
+    
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    
+
 }
-.yellow-box:nth-child(5){
-    display: flex;
+
+.yellow-box:nth-child(5) {
+    
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    
+
 }
 
-.yellow-box:nth-child(6){
-    display: flex;
+.yellow-box:nth-child(6) {
+    
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
-.yellow-box:nth-child(6) .red-box:nth-child(2){
+.yellow-box:nth-child(6) .red-box:nth-child(2) {
     flex-grow: 1;
- }
+}
 
-.yellow-box:nth-child(5) .red-box:last-child{
-   align-self: flex-end;
+.yellow-box:nth-child(5) .red-box:last-child {
+    align-self: flex-end;
 }
 
 
 
-.yellow-box:nth-child(4) .red-box{
+
+
+.yellow-box:nth-child(3) .red-box:first-child,
+.yellow-box:nth-child(3) .red-box:last-child {
     height: 120px;
 }
 
-.yellow-box:nth-child(3) .red-box:first-child, .yellow-box:nth-child(3) .red-box:last-child{
-   height: 120px;
-}
 
-
-.red-box{
+.red-box {
     width: 78px;
-    height: 78px;
+    min-height: 78px;
     background-color: #9D0208;
     border-radius: 5px;
     margin: 5px;
 }
-
